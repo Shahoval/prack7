@@ -1,0 +1,270 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 60px;
+}
+ 
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    margin:  0 30px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.navbar::after {
+    display: block;
+    width:70%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Секція Home */
+#home {
+    padding: 50px 0;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2em;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#home .lastname {
+    display: block;
+    margin-top: 0.5em;
+}
+
+#home p.description {
+    font-size: 1em;
+    color: #000;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -50px;
+}
+
+#home .profile-photo-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    
+}
+
+/* Позиціонування UA|EN */
+.language-switch {
+    position: absolute;
+    top: 5%;
+    right: 1px; /* Позиція справа */
+    font-weight: bold;
+    color: #000;
+    transform: rotate(90deg);
+}
+
+/* Медіа-запити */
+@media (max-width: 767px) {
+    /* Додайте стилі для UA|EN у мобільному вигляді */
+    .language-switch {
+        top: 15px; /* Позиція зверху */
+        right: 0;
+        transform: none; /* Скинути обертання */
+        font-size: 1em; /* Зменшити розмір шрифту за потреби */
+    }
+}
+
+
+/* Секція About */
+#about {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-paragraph {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Секція Skills */
+#skills {
+    padding: 50px 0;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#skills h5 {
+    font-size: 1.5em;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skills-container .col-md-3 {
+    margin-bottom: 20px;
+    text-align: center;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.skills-container img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.skills-container p {
+    margin: 0;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+/* Секція Portfolio */
+#portfolio {
+    padding: 50px 0;
+}
+
+#portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h6 a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.portfolio-item h6 a:hover {
+    text-decoration: underline;
+}
+
+/* Секція Contacts */
+#contacts {
+    padding: 50px 0;
+    
+    text-align: center;
+    color: black;
+}
+
+#contacts h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contacts h6 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#contacts .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    background-color: transparent;
+}
+
+#contacts .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    filter: invert(100%);
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Медіа-запити */
+@media (max-width: 767px) {
+    #home .profile-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-container .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
