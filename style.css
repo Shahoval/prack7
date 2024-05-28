@@ -116,8 +116,8 @@ main {
 .about-paragraph {
     font-size: 1.2em;
     color: #555;
-    line-height: 1.5;
-    margin: 10px 0;
+    line-height: 3;
+    margin: 12px 0;
 }
 
 /* Секція Skills */
@@ -132,10 +132,11 @@ main {
 }
 
 #skills h5 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #777;
     margin-bottom: 30px;
     text-align: center;
+
 }
 
 .skills-container {
